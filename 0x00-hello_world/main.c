@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Script: simple barebones function
+ * This code is : an empty fonction
  * Return: Always 0 (Success)
  */
 int main(void)
