@@ -3,9 +3,9 @@
 /**
 
  * main - print _putchar
- *
- * This script prints the fonction used in it 
- *
+
+ * This script prints the fonction used in it
+
  * Return: 0
 
  */
