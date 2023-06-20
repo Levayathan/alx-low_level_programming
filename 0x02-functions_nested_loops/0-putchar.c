@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
-
  * main - print _putchar
-
+ *
  * This script prints the fonction used in it
-
+ *
  * Return: 0
-
  */
 
 
