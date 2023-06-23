@@ -3,7 +3,7 @@
 /**
  * print_triangle - prints a triangle
  *
- * @size: length of sides 
+ * @size: length of sides
  *
  * Return: void
  */
