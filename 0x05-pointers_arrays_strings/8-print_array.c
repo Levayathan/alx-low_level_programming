@@ -20,7 +20,7 @@ void print_array(int *a, int n)
 		n = 0;
 	if (n > 0)
 	{
-		while (a[i] != '\0' && count < n)
+		while (a[i] != '\0' && count <= n)
 		{
 			printf("%d, ", a[i]);
 			i++;
