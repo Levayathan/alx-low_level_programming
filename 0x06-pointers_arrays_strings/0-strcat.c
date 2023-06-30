@@ -9,13 +9,14 @@
  * Return : it returns the content of the string dest
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	for (dest[i] != '\0'; i++)
 		;
-	for (j = 0; src[j] != '\0'; j++)
+	for (src[j] != '\0'; j++)
 	{
 		dest[i] = src[j];
 		i++;
