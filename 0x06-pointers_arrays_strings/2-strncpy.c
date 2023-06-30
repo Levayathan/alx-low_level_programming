@@ -4,7 +4,6 @@
  *
  * @dest: This is the output dest
  * @src: This is the input source
- *
  * @n: This is the number of bytes to copy
  *
  *Return: Copied string with the number of bytes
@@ -12,15 +11,15 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int index;
+	int i;
 
-	for (index = 0; index < n && src[index] != '\0' ; index++)
+	for (i = 0; i < n && src[i] != '\0' ; i++)
 	{
-		dest[index] = src[index];
+		dest[i] = src[i];
 	}
-	for (index < n; index++)
+	for (; i < n; i++)
 	{
-		dest[index] = '\0';
+		dest[i] = '\0';
 	}
 	return (dest);
 }
