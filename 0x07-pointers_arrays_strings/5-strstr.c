@@ -2,8 +2,10 @@
 
 /**
  * _strstr - locates a substring
+ *
  * @haystack: string to search through
  * @needle: string to match
+ *
  * Return: pointer to initial segment of haystack
  */
 
