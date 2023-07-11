@@ -9,7 +9,7 @@
  * @s2: This is the input string
  *
  * Return: The returned pointer should point to a newly allocated space in
- *		memory wich contains the content of s1 
+ *		memory wich contains the content of s1
  *         of s2, and null terminated
  */
 
