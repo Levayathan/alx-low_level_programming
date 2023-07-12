@@ -5,21 +5,21 @@
  *
  * @dest: Destination string
  * @src: Source string
+ *
  * Return: Concat newString to dest
  */
-
 char *_strcat(char *dest, char *src)
 {
-        int a, b;
+	int a, b;
 
-        for (a = 0; dest[a] != '\0'; a++)
-                ;
-        for (b = 0; src[b] != '\0'; b++)
-        {
-                dest[a] = src[b];
-                a++;
-        }
-        return (dest);
+	for (a = 0; dest[a] != '\0'; a++)
+		;
+	for (b = 0; src[b] != '\0'; b++)
+	{
+		dest[a] = src[b];
+		a++;
+	}
+	return (dest);
 }
 
 /**
@@ -29,7 +29,6 @@ char *_strcat(char *dest, char *src)
  *
  * Return: Return the length of the string
  */
-
 int _strlen(char *s)
 {
 	int a;
@@ -47,27 +46,26 @@ int _strlen(char *s)
  *
  * Return: Returns a pointer to a new string, or NULL if it fails
  */
-
 char *argstostr(int ac, char **av)
 {
-	int index, sumString;
-	char *newString;
+	int index, sum_string;
+	char *new_string;
 
-	sumString = 1;
+	sum_string = 1;
 
 	if (ac == 0 || av == NULL)
-		return (0);
-	for (index = 0; index < ac && av[index]; index++)
-	{
-		sumString += _strlen(av[index]);
-	}
-	newString = malloc((sumString * sizeof(char)) + ac);
-	for (index = 0; index < ac && av[index]; index++)
-	{
-		newString = _strcat(newString, av[index]);
-		newString = _strcat(newString, "\n");
-	}
-	if (newString == NULL)
 		return (NULL);
-	return (newString);
+	for (index = 0; index < ac && av[index]; index++)
+	{
+		sum_string += _strlen(av[index]);
+	}
+	new_string = malloc((sum_string * sizeof(char)) + ac);
+	for (index = 0; index < ac && av[index]; index++)
+	{
+		new_string = _strcat(new_string, av[index]);
+		new_string = _strcat(new_string, "\n");
+	}
+	if (new_string == NULL)
+		return (NULL);
+	return (new_string);
 }
