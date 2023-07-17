@@ -7,7 +7,7 @@
  * @age: Dog's age
  * @owner: Owner's name
  *
- * Description : A structure defining a dog's name age and owner's name
+ * Description: A structure defining a dog's name age and owner's name
  */
 
 struct dog
