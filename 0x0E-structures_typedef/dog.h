@@ -3,17 +3,17 @@
 
 /*
  * struct dog - a dog struct
- * @name: Dog's name
- * @age: Dog's age
- * @owner: Owner's name
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: owner's name
  *
- * Description: A structure defining a dog's name age and owner's name
+ * Description: A structure defining a dog
  */
 
 struct dog
 {
-	float age;
 	char *name;
+	float age;
 	char *owner;
 };
 
